@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>XC.</title>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       XC. wrapper page.
+       Host this file (plus the three xc-icon-*.png files) on any static
+       host: GitHub Pages, Netlify, Cloudflare Pages, all free.
+       Then:
+         1. Replace APP_URL below with your deployed /exec URL.
+         2. Share THIS page's URL with staff instead of the /exec URL.
+       Saving THIS page to the home screen gives the proper XC. icon,
+       because iOS reads icons from the top-level page, and here you
+       control the top-level page. It also gives you a clean, brandable
+       URL you own, independent of the Google deployment address.
+       ══════════════════════════════════════════════════════════════════ -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="xc-icon-180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="xc-icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="xc-icon-512.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="XC." />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="XC." />
+  <meta name="theme-color" content="#FF6B1A" />
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{height:100%;overflow:hidden;background:#FF6B1A}
+    iframe{display:block;width:100%;height:100%;height:100dvh;border:none}
+  </style>
+</head>
+<body>
+  <iframe id="app" title="XC. cross country recorder" allow="clipboard-write"></iframe>
+  <script>
+    // Paste your deployed Apps Script web app URL between the quotes:
+    var APP_URL = 'PASTE_YOUR_EXEC_URL_HERE';
+    document.getElementById('app').src = APP_URL;
+  </script>
+</body>
+</html>
